@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>spam mail prediction</title>
+	<style>
+        body{
+            background-image: url('https://img.freepik.com/free-vector/realistic-mailbox-letters-composition-with-classic-mail-box-paper-envelopes-letters_1284-26889.jpg?w=2000');
+            background-repeat: no-repeat;
+            background-size:100%;
+        }
+		/* CSS for the text box */
+		input[type=text] {
+			padding: 10px;
+			font-size: 18px;
+			border-radius: 10px;
+			border: ipx solid gray;
+			width: 60%;
+            border-color:navy ;
+            align-items: center;
+            padding-left:30px;
+		}
+		
+		/* CSS for the submit button */
+		input[type=submit] {
+			background-color:darkslategray;
+			color:white;
+			padding: 10px;
+			border-radius: 15px;
+			border-style: inset;
+			cursor:pointer;
+			margin-top: 10px;
+            align-items: center;
+		}
+
+		input[type=submit]:hover {
+			background-color:lightseagreen;
+            color:black;
+		}
+        .heading,.heading1
+        {
+            text-align: center;
+            text-decoration:dotted;
+            color:darkslategrey;
+            font-size: 60px;
+        }
+        .heading1{
+            color:crimson;
+            text-align:left;
+            margin-left:30px;
+            margin-top:250px;
+        }
+        .hello
+        {
+            padding-top: 30px;
+            padding-left: 200px;
+            color:midnightblue;
+            font-size:40px;
+        }
+        .subm
+        {
+            padding-left: 600px;
+        }
+	</style>
+</head>
+<body>
+	<h1 class="heading">Spam Mail Prediction</h1>
+	<form method="post" action="\result">
+		<label for="text-input" class="hello">Enter some text:</label>
+		<input type="text" id="text-input" name="text-input"><br><br>
+        <label class="subm"><input type="submit" value="predict"></label>
+	</form>
+    <h1 class="heading1">{{s}}</h1>
+</body>
+</html>
